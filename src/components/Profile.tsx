@@ -7,8 +7,15 @@ export default function Profile() {
       <div className="flex gap-8">
         {/* 프로필 이미지 */}
         <div className="relative">
-          <div className="w-32 h-32 bg-purple-600 rounded-full overflow-hidden">
-            <span className="flex items-center justify-center h-full text-lg">사진</span>
+          <div className="w-32 h-32 rounded-full overflow-hidden border border-[#2d2d3d]">
+            <Image 
+              src="/images/20250221_184449.jpg"  // 실제 이미지 파일명으로 수정
+              alt="Profile picture"
+              width={128}
+              height={128}
+              className="object-cover"
+              priority  // 이미지를 먼저 로드하도록 설정
+            />
           </div>
         </div>
 
