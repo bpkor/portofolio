@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a19;
+  --foreground: #ffffff;
+  --primary: #8b5cf6;
+  --secondary: #06b6d4;
+  --accent: #ec4899;
+  --border: #2d2d3d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-text-purple {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600;
+}
+
+.gradient-text-blue {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400;
+}
+
+.gradient-text-pink {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-pink-600;
+}
